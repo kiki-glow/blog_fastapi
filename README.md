@@ -41,14 +41,15 @@ You’re using Python **3.13+**.
 
 ```bash
 # (recommended) create/activate a virtual environment if your tooling doesn’t already do it
-# then install dependencies
-uv sync
+uv init project_name
+cd project_name
+uv add "fastapi[standard]" # install dependencies
 ```
 
 ## Run
 
 ```bash
-uv run main.py
+uv run fastapi dev main.py # for development
 ```
 
 Then open:
